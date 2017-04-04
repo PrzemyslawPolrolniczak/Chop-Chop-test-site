@@ -35,7 +35,7 @@ menu {
   }
 }
 
-section {
+.hero {
   border-top: 1px solid rgb(235, 235, 235);
   font-family: 'bree_serifregular';
   text-align: center;
@@ -69,7 +69,77 @@ section {
   }
 }
 
+.content {
+  margin-top: 70px;
+  height: 408px;
+  border: 1px solid red;
+  border-top: 1px solid rgb(235, 235, 235);
+  display: flex;
+  justify-content: center;
+  div {
+    padding-top: 21px;
+    width: 300px;
+    height: 100%;
+    margin-right: 20px;
+    h1 {
+      font-family: 'bree_serifregular';
+      font-size: 38px;
+      color: rgb(238, 138, 85);
+      margin-bottom: 25px;
+    }
+    .square {
+      filter: grayscale(100%);
+      background: url(../images/miniature.png);
+      display: inline-block;
+      border: 1px solid white;
+      outline: 1px solid black;
+      background-position:center;
+      background-size: contain;
+      width: 78px;
+      height: 78px;
+      margin-right: 15.5px;
+      margin-bottom: 13px;
+    }
+    p {
+      display: inline-block;
+      font-size: 14px;
+      text-align: justify;
+      line-height: 21px;
+      word-spacing: 1px;
+      word-break: break-all;
+      hyphens: auto; // nie działa. Nie dodaje "-" kiedy tekst się nie mieści, nie mam zielonego pojęcia jak to zrobić inaczej.
+    }
+    .inlineParagraph {
+      vertical-align: top; //dając .square vertical-align:top;, a paragrafowi dając vertical-align:text-top; nie udało mi się rozwiązać problemu z niewyrównanym do górnej krawędzi tekstem.
+      width: 200px;
+      word-spacing: normal;
+      word-break: normal;
+    }
+    .more {
+      text-align: right;
+      height: auto;
+      font-size: 14px;
+      color: rgb(189, 189, 189);
+      &.lower {
+        margin-top: 10px;
+      }
+      span {
+        letter-spacing: -2px;
+      }
+    }
+  }   
+}
+
+
+
 //
+
+
+
+
+
+
+
 
 
 

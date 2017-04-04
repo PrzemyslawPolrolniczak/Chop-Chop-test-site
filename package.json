@@ -1,7 +1,7 @@
 {
   "name": "project",
   "version": "1.0.0",
-  "description": "",
+  "description": "Site made for recruitment needs.",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,5 +13,19 @@
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.4.0",
     "jshint": "^2.9.4"
-  }
+  },
+  "dependencies": {
+    "gulp-sass": "^3.1.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-sourcemaps": "^2.4.1",
+    "jshint": "^2.9.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrzemyslawPolrolniczak/Chop-Chop-test-site.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PrzemyslawPolrolniczak/Chop-Chop-test-site/issues"
+  },
+  "homepage": "https://github.com/PrzemyslawPolrolniczak/Chop-Chop-test-site#readme"
 }

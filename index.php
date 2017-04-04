@@ -9,6 +9,15 @@
     <title>Simple site for Chop-Chop recruitment needs</title>
   </head>
   <body>
-    <div class="Rectangle_1"></div>
+    <header>
+      <div class="topBar"></div>
+      <menu>
+        <span>Home</span>
+        <span class="closerLeft">Products</span>
+        <img src="images/logo.png">
+        <span class="closerRight">About us</span>
+        <span>Contact</span>
+      </menu>
+    </header>
   </body>
 </html>

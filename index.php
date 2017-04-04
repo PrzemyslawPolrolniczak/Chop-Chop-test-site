@@ -19,5 +19,9 @@
         <span>Contact</span>
       </menu>
     </header>
+    <section>
+      This is just a sample page
+      <div class="button">push the button</div>
+    </section>
   </body>
 </html>

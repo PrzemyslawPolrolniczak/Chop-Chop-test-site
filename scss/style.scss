@@ -1,7 +1,8 @@
 @import "modules/_mixin.scss";
+@import "modules/_fonts.scss";
 
 html {
-  font-family: sans-serif;
+  font-family: 'open sans regular';
 }
 
 .topBar {
@@ -19,7 +20,7 @@ menu {
   justify-content: space-between;
   span {
     height: 42px;
-    margin-top: 54px;
+    margin-top: 52px;
   }
   .closerLeft {
     margin-left: 93px;
@@ -33,5 +34,39 @@ menu {
     color: rgb(229, 229, 229);
   }
 }
+
+section {
+  border-top: 1px solid rgb(235, 235, 235);
+  font-family: 'bree_serifregular';
+  text-align: center;
+  height: 280px;
+  font-size: 82px;
+  color: rgb(34, 34, 34);
+  padding-top: 41px;
+  .button {
+    font-family: 'open sans regular';
+    line-height: 65px;
+    font-size: 20px;
+    color: rgb(33, 179, 172);
+    font-weight: lighter;  // próbowałem wszystkiego (np font-weight: 100;), ale font dalej jest za gruby.  
+    text-shadow: 0.707px 0.707px 0px rgb(73, 247, 239);
+    height: 70px;
+    width: 300px;
+    margin: 55px auto;
+    border-radius: 7px;
+    background-image: -moz-linear-gradient( 90deg, rgb(45,232,223) 0%, rgb(43,242,232) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(45,232,223) 0%, rgb(43,242,232) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(45,232,223) 0%, rgb(43,242,232) 100%);
+    box-shadow: inset 0px -5px 0px 0px rgba(33, 179, 172, 0.8);
+  }
+}
+
+//
+
+
+
+
+
+
 
 

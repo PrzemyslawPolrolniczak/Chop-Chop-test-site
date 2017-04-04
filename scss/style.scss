@@ -59,9 +59,20 @@ section {
     background-image: -ms-linear-gradient( 90deg, rgb(45,232,223) 0%, rgb(43,242,232) 100%);
     box-shadow: inset 0px -5px 0px 0px rgba(33, 179, 172, 0.8);
   }
+  .button:hover {
+    line-height: 70px;
+    text-shadow: 0;
+    box-shadow: inset 0px 1px 5px 0px rgba(31, 132, 127, 0.8);
+    background-image: -moz-linear-gradient( 90deg, rgb(35,222,213) 0%, rgb(43,242,232) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(35,222,213) 0%, rgb(43,242,232) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(35,222,213) 0%, rgb(43,242,232) 100%);
+  }
 }
 
 //
+
+
+
 
 
 

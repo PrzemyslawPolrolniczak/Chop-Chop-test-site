@@ -6,13 +6,9 @@
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>SZABLON</title>
+    <title>Simple site for Chop-Chop recruitment needs</title>
   </head>
   <body>
-        
-        
-        
-        
-        
+    <div class="Rectangle_1"></div>
   </body>
 </html>

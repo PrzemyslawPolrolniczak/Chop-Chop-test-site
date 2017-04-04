@@ -21,17 +21,18 @@ menu {
   span {
     height: 42px;
     margin-top: 52px;
+    &:hover {
+      border-bottom: 1px solid rgb(45, 232, 223);
+      border-spacing: 50px;
+      color: rgb(229, 229, 229);
+      cursor: pointer;
+    }
   }
   .closerLeft {
     margin-left: 93px;
   }
   .closerRight {
     margin-right: 93px;
-  }
-  span:hover {
-    border-bottom: 1px solid rgb(45, 232, 223);
-    border-spacing: 50px;
-    color: rgb(229, 229, 229);
   }
 }
 
@@ -58,14 +59,15 @@ menu {
     background-image: -webkit-linear-gradient( 90deg, rgb(45,232,223) 0%, rgb(43,242,232) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(45,232,223) 0%, rgb(43,242,232) 100%);
     box-shadow: inset 0px -5px 0px 0px rgba(33, 179, 172, 0.8);
-  }
-  .button:hover {
-    line-height: 70px;
-    text-shadow: 0;
-    box-shadow: inset 0px 1px 5px 0px rgba(31, 132, 127, 0.8);
-    background-image: -moz-linear-gradient( 90deg, rgb(35,222,213) 0%, rgb(43,242,232) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(35,222,213) 0%, rgb(43,242,232) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(35,222,213) 0%, rgb(43,242,232) 100%);
+    &:hover {
+      line-height: 70px;
+      text-shadow: 0;
+      box-shadow: inset 0px 1px 5px 0px rgba(31, 132, 127, 0.8);
+      background-image: -moz-linear-gradient( 90deg, rgb(35,222,213) 0%, rgb(43,242,232) 100%);
+      background-image: -webkit-linear-gradient( 90deg, rgb(35,222,213) 0%, rgb(43,242,232) 100%);
+      background-image: -ms-linear-gradient( 90deg, rgb(35,222,213) 0%, rgb(43,242,232) 100%);
+      cursor: pointer;
+    }
   }
 }
 
@@ -126,12 +128,12 @@ menu {
       span {
         letter-spacing: -2px;
       }
-    }
-    .more:hover {
-      color: rgb(45, 232, 223);
-      cursor: pointer;
-    }
-  }   
+      &:hover {
+        color: rgb(45, 232, 223);
+        cursor: pointer;
+      }
+    }   
+  }
 }
 
 

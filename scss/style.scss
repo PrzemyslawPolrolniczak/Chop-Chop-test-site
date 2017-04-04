@@ -18,6 +18,7 @@ menu {
   width: 940px;
   justify-content: space-between;
   span {
+    height: 42px;
     margin-top: 54px;
   }
   .closerLeft {
@@ -26,5 +27,11 @@ menu {
   .closerRight {
     margin-right: 93px;
   }
+  span:hover {
+    border-bottom: 1px solid rgb(45, 232, 223);
+    border-spacing: 50px;
+    color: rgb(229, 229, 229);
+  }
 }
+
 

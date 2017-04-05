@@ -46,5 +46,21 @@
         <div class="more"><span>-</span><span>-</span><span>-</span><span>-</span><span>-</span>&nbsp;&nbsp;read more</div>
       </div>
     </section>
+    <section class="contact">Contact us
+      <form>
+        <fieldset>
+          <input placeholder="name" type="text">
+        </fieldset>
+        <fieldset>
+          <input placeholder="e-mail" type="email">
+        </fieldset>        
+        <fieldset>
+          <input placeholder="name" type="text">
+        </fieldset>  
+        <fieldset>
+          <textarea placeholder="your message"></textarea>
+        </fieldset>
+      </form>
+    </section>
   </body>
 </html>

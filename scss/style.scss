@@ -135,9 +135,68 @@ menu {
   }
 }
 
-
+.contact {
+  height: 380px;
+  margin-top: 34px;
+  border: 1px solid red;
+  border-top: 1px solid rgb(235, 235, 235);
+  padding-top: 15px;
+  font-size: 60px;
+  text-align: center;
+  color: rgb(45, 232, 223);
+  font-family: 'bree_serifregular';
+  form {
+    display: flex;
+    width: 940px;
+    height: 170px;
+    margin: 34px auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 18px;
+    font-family: "Open Sans";
+    fieldset {
+      width: 460px;
+      display: flex;
+    }
+    input {
+      padding-left: 21px;
+      height: 50px;
+      width: 460px;
+      display: flex;
+      border-radius: 7px;
+      border: 1px solid rgb(220, 220, 220);
+      background-color: rgb(249, 249, 249);
+      box-shadow: inset 1.414px 1.414px 5px 0px rgba(213, 213, 213, 0.9);
+      &::-webkit-input-placeholder {
+        font-family: "Open Sans";
+        color: rgb(209, 209, 209);
+      }
+    }
+    textarea {
+      border-radius: 7px;
+      display: flex;
+      height: 170px;
+      width: 460px;
+      border: 1px solid rgb(220, 220, 220);
+      background-color: rgb(249, 249, 249);
+      box-shadow: inset 1.414px 1.414px 5px 0px rgba(213, 213, 213, 0.9);
+      resize: none;
+      &::-webkit-input-placeholder {
+        font-family: "Open Sans";
+        color: rgb(209, 209, 209);
+      }
+    }
+  }
+}
 
 //
+
+
+
+
+
+
 
 
 

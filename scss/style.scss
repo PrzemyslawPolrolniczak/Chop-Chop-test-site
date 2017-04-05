@@ -160,6 +160,7 @@ menu {
       display: flex;
     }
     input {
+      margin-right: 15px;
       padding-left: 21px;
       height: 50px;
       width: 460px;
@@ -176,6 +177,8 @@ menu {
     textarea {
       border-radius: 7px;
       display: flex;
+      padding-left: 21px;
+      padding-top: 13px;
       height: 170px;
       width: 460px;
       border: 1px solid rgb(220, 220, 220);

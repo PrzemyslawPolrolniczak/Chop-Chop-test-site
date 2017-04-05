@@ -49,13 +49,13 @@
     <section class="contact">Contact us
       <form>
         <fieldset>
-          <input placeholder="name" type="text">
+          <input placeholder="name" type=text>
         </fieldset>
         <fieldset>
-          <input placeholder="e-mail" type="email">
+          <input placeholder="e-mail" type=email>
         </fieldset>        
         <fieldset>
-          <input placeholder="name" type="text">
+          <input placeholder="phone" type=tel>
         </fieldset>  
         <fieldset>
           <textarea placeholder="your message"></textarea>

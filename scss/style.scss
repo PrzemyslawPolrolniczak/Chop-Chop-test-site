@@ -232,6 +232,54 @@ menu {
 footer {
   height: 160px;
   background-color: black;
+  padding-top: 40px;
+  display: flex;
+  color: white;
+  font-size: 16px;
+  .container {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    ul {
+      height: 60px;
+      width: 120px;
+      line-height: 30px;
+      span {
+        letter-spacing: -2px;
+      }
+    }
+    .homeProducts {
+    }
+    .aboutContact {
+      margin-left: 60px;
+      text-align: right;
+    }
+    div {
+      height: 50px;
+      width: 50px;
+    }
+    .twitter {
+      margin-left: 100px;
+      background-color: white;
+      border-radius: 50%;
+      background-image: url(../images/Twitter.png);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .facebook {
+      margin-left: 40px;
+      background-color: white;
+      border-radius: 50%;
+      background-image: url(../images/facebook.png);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .copyright {
+      margin-left: 119px;
+      line-height: 50px;
+      width: auto;
+    }
+  }
 }
 
 //

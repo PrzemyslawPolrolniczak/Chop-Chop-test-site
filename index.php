@@ -65,7 +65,19 @@
     </section>
     <div class="navTop">back to top</div>
     <footer>
-      
+      <div class="container">
+        <ul class="homeProducts">
+          <li><span>-</span><span>-</span><span>-</span><span>-</span>&nbsp;&nbsp;home</li>
+          <li><span>-</span><span>-</span><span>-</span><span>-</span>&nbsp;&nbsp;products</li>
+        </ul>
+        <ul class="aboutContact">
+          <li><span>-</span><span>-</span><span>-</span><span>-</span>&nbsp;&nbsp;about us</li>
+          <li><span>-</span><span>-</span><span>-</span><span>-</span>&nbsp;&nbsp;contact</li>
+        </ul>
+        <div class="twitter"></div>
+        <div class="facebook"></div>
+        <div class="copyright">Copyright &copy; 2010 Sample &amp; Pack, Inc.</div>
+      </div>
     </footer>
   </body>
 </html>

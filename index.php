@@ -61,6 +61,11 @@
           <textarea placeholder="your message"></textarea>
         </fieldset>
       </form>
+      <div class="button">send message</div>
     </section>
+    <div class="navTop">back to top</div>
+    <footer>
+      
+    </footer>
   </body>
 </html>

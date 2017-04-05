@@ -36,6 +36,24 @@ menu {
   }
 }
 
+.button {
+  font-family: 'open sans regular';
+  color: rgb(33, 179, 172);
+  font-weight: lighter;  // próbowałem wszystkiego (np font-weight: 100;), ale font dalej jest za gruby.  
+  text-shadow: 0.707px 0.707px 0px rgb(73, 247, 239);
+  border-radius: 7px;
+  background-image: -moz-linear-gradient( 90deg, rgb(45,232,223) 0%, rgb(43,242,232) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(45,232,223) 0%, rgb(43,242,232) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(45,232,223) 0%, rgb(43,242,232) 100%);
+  &:hover {
+    text-shadow: 0;
+    background-image: -moz-linear-gradient( 90deg, rgb(35,222,213) 0%, rgb(43,242,232) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(35,222,213) 0%, rgb(43,242,232) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(35,222,213) 0%, rgb(43,242,232) 100%);
+    cursor: pointer;
+  }
+}
+
 .hero {
   border-top: 1px solid rgb(235, 235, 235);
   font-family: 'bree_serifregular';
@@ -45,31 +63,20 @@ menu {
   color: rgb(34, 34, 34);
   padding-top: 41px;
   .button {
-    font-family: 'open sans regular';
     line-height: 65px;
     font-size: 20px;
-    color: rgb(33, 179, 172);
-    font-weight: lighter;  // próbowałem wszystkiego (np font-weight: 100;), ale font dalej jest za gruby.  
-    text-shadow: 0.707px 0.707px 0px rgb(73, 247, 239);
     height: 70px;
     width: 300px;
     margin: 55px auto;
-    border-radius: 7px;
-    background-image: -moz-linear-gradient( 90deg, rgb(45,232,223) 0%, rgb(43,242,232) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(45,232,223) 0%, rgb(43,242,232) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(45,232,223) 0%, rgb(43,242,232) 100%);
     box-shadow: inset 0px -5px 0px 0px rgba(33, 179, 172, 0.8);
     &:hover {
       line-height: 70px;
-      text-shadow: 0;
       box-shadow: inset 0px 1px 5px 0px rgba(31, 132, 127, 0.8);
-      background-image: -moz-linear-gradient( 90deg, rgb(35,222,213) 0%, rgb(43,242,232) 100%);
-      background-image: -webkit-linear-gradient( 90deg, rgb(35,222,213) 0%, rgb(43,242,232) 100%);
-      background-image: -ms-linear-gradient( 90deg, rgb(35,222,213) 0%, rgb(43,242,232) 100%);
-      cursor: pointer;
     }
   }
 }
+
+
 
 .content {
   margin-top: 70px;
@@ -138,7 +145,6 @@ menu {
 .contact {
   height: 380px;
   margin-top: 34px;
-  border: 1px solid red;
   border-top: 1px solid rgb(235, 235, 235);
   padding-top: 15px;
   font-size: 60px;
@@ -149,7 +155,7 @@ menu {
     display: flex;
     width: 940px;
     height: 170px;
-    margin: 34px auto;
+    margin: 33px auto 0px;
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: column;
@@ -191,9 +197,48 @@ menu {
       }
     }
   }
+  .button {
+    width: 460px;
+    height: 50px;
+    font-size: 16px;
+    margin: 29px auto;
+    line-height: 45px;
+    box-shadow: inset 0px -3px 0px 0px rgba(33, 179, 172, 0.8);
+    &:hover {
+      line-height: 50px;
+      box-shadow: inset 0px 1px 5px 0px rgba(31, 132, 127, 0.8);
+    }
+  }
+}
+
+.navTop {
+  height: 30px;
+  border-top: 3px solid rgb(85, 85, 85);
+  background-color: black;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  width: 300px;
+  margin: 50px auto 0px;
+  color: rgb(254, 254, 254);
+  text-align: center;
+  font-size: 12px;
+  line-height: 30px;
+  &:hover {
+    border-top: 4px solid rgb(85, 85, 85);
+    cursor: pointer;
+  }
+}
+
+footer {
+  height: 160px;
+  background-color: black;
 }
 
 //
+
+
+
+
 
 
 

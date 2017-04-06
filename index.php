@@ -49,19 +49,19 @@
     <section class="contact">Contact us
       <form>
         <fieldset>
-          <input placeholder="name" type=text>
+          <input placeholder="name" type=text method="POST">
         </fieldset>
         <fieldset>
-          <input placeholder="e-mail" type=email>
+          <input placeholder="e-mail" type=email method="POST">
         </fieldset>        
         <fieldset>
-          <input placeholder="phone" type=tel>
+          <input placeholder="phone" type=tel method="POST">
         </fieldset>  
         <fieldset>
-          <textarea placeholder="your message"></textarea>
+          <textarea placeholder="your message" method="POST"></textarea>
         </fieldset>
       </form>
-      <div class="button">send message</div>
+      <div class="button" type="submit">send message</div>
     </section>
     <div class="navTop">back to top</div>
     <footer>

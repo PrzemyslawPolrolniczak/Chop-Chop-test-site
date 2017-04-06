@@ -243,7 +243,10 @@ footer {
     ul {
       height: 60px;
       width: 120px;
-      line-height: 30px;
+      line-height: 20px;
+      .bottomLi {
+        margin-top: 10px;
+      }
       span {
         letter-spacing: -2px;
       }

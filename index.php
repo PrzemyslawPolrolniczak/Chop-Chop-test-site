@@ -21,7 +21,7 @@
     </header>
     <section class="hero">
       This is just a sample page
-      <div class="button">push the button</div>
+      <div class="button" id="highlighter">push the button</div>
     </section>
     <section class="content">
       <div>

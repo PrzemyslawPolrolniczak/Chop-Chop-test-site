@@ -50,21 +50,21 @@
       </div>
     </section>
     <section class="contact">Contact us
-      <form>
+      <form id="form">
         <fieldset>
-          <input placeholder="name" type=text method="POST">
+          <input placeholder="name" type=text method="GET" name="name">
         </fieldset>
         <fieldset>
-          <input placeholder="e-mail" type=email method="POST">
+          <input placeholder="e-mail" type=email method="GET" name="email">
         </fieldset>        
         <fieldset>
-          <input placeholder="phone" type=tel method="POST">
+          <input placeholder="phone" type=tel method="GET" name="phone">
         </fieldset>  
         <fieldset>
-          <textarea placeholder="your message" method="POST"></textarea>
+          <textarea placeholder="your message" method="GET" name="message"></textarea>
         </fieldset>
       </form>
-      <div class="button" type="submit">send message</div>
+      <input id="send" type="submit" form="form" value="send message">
     </section>
     <div class="navTop">back to top</div>
     <footer>

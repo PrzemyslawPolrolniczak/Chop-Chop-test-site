@@ -80,7 +80,6 @@ menu {
 
 .content {
   margin-top: 70px;
-  height: 408px;
   border-top: 1px solid rgb(235, 235, 235);
   display: flex;
   justify-content: center;
@@ -116,12 +115,18 @@ menu {
       word-spacing: 1px;
       word-break: break-all;
       hyphens: auto; // nie działa. Nie dodaje "-" kiedy tekst się nie mieści, nie mam zielonego pojęcia jak to zrobić inaczej.
+      &:last-of-type {
+        margin-top: 13px;
+      }
     }
     .inlineParagraph {
       vertical-align: top; //dając .square vertical-align:top;, a paragrafowi dając vertical-align:text-top; nie udało mi się rozwiązać problemu z niewyrównanym do górnej krawędzi tekstem.
       width: 200px;
       word-spacing: normal;
       word-break: normal;
+    }
+    .hidden {
+      display: none;
     }
     .more {
       text-align: right;

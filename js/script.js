@@ -14,22 +14,30 @@ $(function(){
   
   var readMore = $(".more");
   
-  readMore.one('click',function(){
-    $(this).parent().css('height', "100%");
-    $(this).parent().find( "p:last" ).append("<br><br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget ex nulla. Integer ullamcorper nibh lorem, ut porttitor mi sagittis eget. Aenean malesuada mattis justo, sed efficitur nisl fringilla eget. Integer a mi quis lectus vulputate tempus quis quis dui. Mauris suscipit euismod urna, eget feugiat tellus imperdiet vitae. Vestibulum.<p>");
-    $(".contact").css('margin-top', "222px");
-    $(this).text('');
+  readMore.on('click',function(){
+    if ($(this).parent().find('p').hasClass('hidden') == true) {
+      $(this).parent().find('p').removeClass('hidden');
+      $(this).html('<span>-</span><span>-</span><span>-</span><span>-</span>&nbsp;&nbsp;read less');
+    } else {
+      $(this).parent().find('p').last().addClass('hidden');
+      $(this).html('<span>-</span><span>-</span><span>-</span><span>-</span>&nbsp;&nbsp;read more');
+    }
   });
   
-  //komentarz: można to było zrobić na parę sposobów, np dodając nowy paragraf przed "read more", lub stworzyć taki ukryty paragraf w HTML z klasą "hidden" (display: none;). Postanowiłem zrobić to appendem aby nie dotykać pliku HTML i CSS. Największy problem w tym zadaniu sprawiło mi to, aby sekcja kontaktu uwzględniła nowy element i odniosła się do niego ustawiając margines, dlatego wpisałem nowy margines na sztywno. Jeśli po kliknięciu drugi raz w "read more" miałby ukrywać się tekst to zrobiłbym to na divach z klasą hidden i togglem w jQuerry (dodatkowo dodałbym text("-- read less") do diva o klasie ".more").
+  //komentarz: proste zadanie z ukrytym divem.
   
   
   //██████ zadanie 3 ██████\\
   
   $("#highlighter").click(function(){
     $("p:contains('ipsum')").each(function() {
-      $(this).html($(this).text().replace('ipsum', '<span class="highlight">ipsum</span>' ));
-      //zrób aby span o klasie "highlight" dostał animate 
+      $(this).html($(this).text().replace('ipsum', '<span>ipsum</span>' ));
+      $('p > span').addClass('highlight');
+      setTimeout(function() {
+        $('p > span').removeClass('highlight');
+      }, 3000);
     });
   });
+  
+  //komentarz: to zadanie było dla mnie trudne przez brak wiedzy o istnieniu funkcji "replace". Jednak po dłuższym grzebaniu w internecie odkryłem jQuerrowe replaceWith i replaceAll, a z tamtąd tylko krok do JS-owego replace. Animacja też sprawiła problem, bo stackoverflow zalecał korzystanie z plugina, a jak chciałem dodać klase a potem ją usunąć przez delay(3000), to okazało się, że delay działa tylko dla animate.
 });

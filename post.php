@@ -9,7 +9,7 @@ function showFormData() {
 }
 
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
-  if( in_array('', $array)) { //nie wiem jak zrobić, aby wyszukiwał czy jakiekolwiek pole jest wypełnione.
+  if( in_array('', $array)) {
     echo 'Brak danych do wyświetlenia';
   } else {
     echo 'Dziękujemy za wysłanie formularza z następującymi danymi:<br>';

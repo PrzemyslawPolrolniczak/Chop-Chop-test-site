@@ -47,7 +47,7 @@ $(function(){
   var request = "";
   
   button.click(function(a) {
-    a.preventDefault();
+    a.preventDefault(); //kompletnie nie wiem dlaczego preventDefault tutaj nie działa, nie mogę przez to sprawdzić czy ten AJAX w ogóle odpowiada
     request = $.ajax({
       url: "/post.php",
       type: "post"
@@ -56,9 +56,9 @@ $(function(){
       console.log('dziala');
     });
     request.fail(function() {
-      console.log('niedziala');
+      console.log('nie dziala'); //console.logi tylko po to aby sprawdzić czy AJAX cokolwiek robi
     });
   });
   
-  
+  // komentarz: poddałem się z braku wiedzy jak połączyć PHP z AJAX-em, nawet sam preventDefault nie zadziałał.
 });

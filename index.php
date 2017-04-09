@@ -21,6 +21,15 @@
     </header>
     <section class="hero">
       This is just a sample page
+      <?php
+        if($_SERVER['REQUEST_METHOD'] === 'GET') {
+          if( isset($_GET['name']){
+            $name = trim( $_GET['name'] );
+            
+            echo 'Witaj ' . $name;
+        }
+    }
+      ?>
       <div class="button" id="highlighter">push the button</div>
     </section>
     <section class="content">
@@ -50,7 +59,7 @@
       </div>
     </section>
     <section class="contact">Contact us
-      <form id="form">
+      <form id="form" method="GET" action="">
         <fieldset>
           <input placeholder="name" type=text method="GET" name="name">
         </fieldset>

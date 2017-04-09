@@ -40,4 +40,25 @@ $(function(){
   });
   
   //komentarz: to zadanie było dla mnie trudne przez brak wiedzy o istnieniu funkcji "replace". Jednak po dłuższym grzebaniu w internecie odkryłem jQuerrowe replaceWith i replaceAll, a z tamtąd tylko krok do JS-owego replace. Animacja też sprawiła problem, bo stackoverflow zalecał korzystanie z plugina, a jak chciałem dodać klase a potem ją usunąć przez delay(3000), to okazało się, że delay działa tylko dla animate.
+  
+  //██████ zadanie AJAX ██████\\
+  
+  var button = $('#send');
+  var request = "";
+  
+  button.click(function(a) {
+    a.preventDefault();
+    request = $.ajax({
+      url: "/post.php",
+      type: "post"
+    });
+    request.done(function() {
+      console.log('dziala');
+    });
+    request.fail(function() {
+      console.log('niedziala');
+    });
+  });
+  
+  
 });

@@ -1,9 +1,17 @@
 <?php 
+$array = $_POST['array'];
+
+function showFormData() {
+  $array = $_POST['array'];
+  foreach($array as $key => $name) {
+    echo $key . ' = ' . $name . '<br>';
+  }
+}
 
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
-  if( isset($_POST['name'])) {
-    $name = trim ( $_POST['name'] );
-    echo 'Dziękujemy za wysłanie formularza z następującymi danymi: <br> Imię: ' . $name;
+  if( $array !== null ) {
+    echo 'Dziękujemy za wysłanie formularza z następującymi danymi:<br>';
+    showFormData();
   } else {
     echo 'Brak danych do wyświetlenia';
   }

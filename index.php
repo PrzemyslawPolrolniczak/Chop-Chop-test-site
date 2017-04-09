@@ -68,16 +68,16 @@
     <section class="contact">Contact us
       <form id="form" method="POST" action="post.php">
         <fieldset>
-          <input placeholder="name" type=text name="name">
+          <input placeholder="name" type=text name="array[name]">
         </fieldset>
         <fieldset>
-          <input placeholder="e-mail" type=email name="email">
+          <input placeholder="e-mail" type=email name="array[email]">
         </fieldset>        
         <fieldset>
-          <input placeholder="phone" type=tel name="phone">
+          <input placeholder="phone" type=tel name="array[phone]">
         </fieldset>  
         <fieldset>
-          <textarea placeholder="your message" name="message"></textarea>
+          <textarea placeholder="your message" name="array[message]"></textarea>
         </fieldset>
       </form>
       <input id="send" type="submit" form="form" value="send message">

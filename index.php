@@ -20,15 +20,22 @@
       </menu>
     </header>
     <section class="hero">
-      This is just a sample page
       <?php
-        if($_SERVER['REQUEST_METHOD'] === 'GET') {
-          if( isset($_GET['name']){
-            $name = trim( $_GET['name'] );
-            
-            echo 'Witaj ' . $name;
-        }
-    }
+      if($_SERVER['REQUEST_METHOD'] === 'GET') {
+        if( isset($_GET['name']) && isset($_GET['color'])){
+          $name = trim( $_GET['name'] );
+          $color = trim( $_GET['color']);
+          echo '<span style="color: ' . $color . '">Witaj ' . $name . '!</span>';
+        } else if (isset($_GET['name'])) {
+          $name = trim( $_GET['name'] );
+          echo 'Witaj ' . $name . '!';
+        } else if (isset($_GET['color'])) {
+          $color = trim( $_GET['color']);
+          echo '<span style="color:' . $color .  '">This is just a sample page';
+        } else {
+          echo 'This is just a sample page';
+        } 
+      }
       ?>
       <div class="button" id="highlighter">push the button</div>
     </section>
@@ -59,18 +66,18 @@
       </div>
     </section>
     <section class="contact">Contact us
-      <form id="form" method="GET" action="">
+      <form id="form" method="POST" action="post.php">
         <fieldset>
-          <input placeholder="name" type=text method="GET" name="name">
+          <input placeholder="name" type=text name="name">
         </fieldset>
         <fieldset>
-          <input placeholder="e-mail" type=email method="GET" name="email">
+          <input placeholder="e-mail" type=email name="email">
         </fieldset>        
         <fieldset>
-          <input placeholder="phone" type=tel method="GET" name="phone">
+          <input placeholder="phone" type=tel name="phone">
         </fieldset>  
         <fieldset>
-          <textarea placeholder="your message" method="GET" name="message"></textarea>
+          <textarea placeholder="your message" name="message"></textarea>
         </fieldset>
       </form>
       <input id="send" type="submit" form="form" value="send message">
